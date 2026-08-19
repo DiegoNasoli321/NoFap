@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #f1f5f9;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #22c55e;
+}
+
+#timer {
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 30px;
+  background: #1e293b;
+  border-radius: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  min-width: 5%; /* garante que sempre haja cor visível */
+}
+
+/* Diferenciação das cores */
+#dayBar {
+  background: linear-gradient(90deg, #22c55e, #16a34a); /* verde */
+}
+
+#weekBar {
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8); /* azul */
+}
+
+#monthBar {
+  background: linear-gradient(90deg, #f59e0b, #d97706); /* dourado/laranja */
+}
+
+#resetBtn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ef4444;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+#resetBtn:hover {
+  background: #dc2626;
+}
