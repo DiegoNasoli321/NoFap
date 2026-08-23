@@ -12,26 +12,46 @@
 
   <div class="progress-container">
     <label>DIA (24h)</label>
-    <div class="progress-bar">
-      <div id="dayBar" class="progress-fill">0%</div>
+    <div class="progress-wrapper">
+      <span id="dayCycles" class="cycle-count"></span>
+      <div class="progress-bar">
+        <div id="dayBar" class="progress-fill">0%</div>
+      </div>
     </div>
   </div>
 
   <div class="progress-container">
     <label>SEMANA (7 dias)</label>
-    <div class="progress-bar">
-      <div id="weekBar" class="progress-fill">0%</div>
+    <div class="progress-wrapper">
+      <span id="weekCycles" class="cycle-count"></span>
+      <div class="progress-bar">
+        <div id="weekBar" class="progress-fill">0%</div>
+      </div>
     </div>
   </div>
 
   <div class="progress-container">
     <label>MÊS (30 dias)</label>
-    <div class="progress-bar">
-      <div id="monthBar" class="progress-fill">0%</div>
+    <div class="progress-wrapper">
+      <span id="monthCycles" class="cycle-count"></span>
+      <div class="progress-bar">
+        <div id="monthBar" class="progress-fill">0%</div>
+      </div>
     </div>
   </div>
 
-  <button id="resetBtn">Resetar contador</button>
+  <!-- Botão de recaída abaixo da última barra -->
+  <button id="resetBtn">💔 Recaída</button>
+
+  <!-- Botão de zerar recaídas no canto superior direito -->
+  <button id="clearRelapsesBtn">Zerar recaídas</button>
+
+  <p id="relapses">0 Recaídas</p>
+
+  <div id="calendar">
+  <!-- Cada mês terá um título e os dias -->
+</div>
+
 
   <script src="script.js"></script>
 </body>
