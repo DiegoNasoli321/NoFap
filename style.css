@@ -203,6 +203,7 @@ button {
   .month {
     font-size: 0.7em;   /* texto menor */
     padding: 4px;
+    margin-left:-10px;
   }
 
   .days {
