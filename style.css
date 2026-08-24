@@ -172,15 +172,10 @@ button {
 }
 
 /* Ajuste para celulares com largura até 400px (como o SM-A065M) */
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .container {
     width: 100%;       /* ocupa toda a largura */
     padding: 5px;
-
-     button {
-    width: 100%; /* ocupa toda a largura em celulares */
-    margin: 5px 0;
-  }
   }
 
   button {
