@@ -198,31 +198,21 @@ button {
     width: 100%;       /* barras vão de ponta a ponta */
   }
 
-/* Calendário */
-#calendar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-  width: 100%;          /* ocupa toda a largura disponível */
-  box-sizing: border-box; /* evita ultrapassar a tela */
-  overflow-x: hidden;   /* garante que não role lateralmente */
-}
+  #calendar {
+    grid-template-columns: repeat(3, 1fr); /* mantém 3 colunas */
+    grid-template-rows: repeat(4, auto);   /* mantém 4 linhas */
+    gap: 10px;                             /* reduz espaço */
+    margin-top: 20px;
+  }
 
-.month {
-  background: #1e293b;
-  padding: 10px;
-  border-radius: 8px;
-  width: 100%;          /* força cada mês a respeitar a largura */
-  box-sizing: border-box;
-}
+  .month {
+    font-size: 0.7em;   /* texto menor */
+    padding: 4px;
+  }
 
-.days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* semana */
-  gap: 4px;
-  width: 100%;          /* garante que não ultrapasse */
-}
+  .days {
+    gap: 2px;
+  }
 
   .day {
     font-size: 0.6em;   /* quadradinhos menores */
