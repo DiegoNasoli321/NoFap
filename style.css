@@ -198,6 +198,7 @@ button {
     grid-template-rows: repeat(4, auto);   /* mantém 4 linhas */
     gap: 10px;                             /* reduz espaço */
     margin-top: 20px;
+    margin-left: -30px;
   }
 
   .month {
