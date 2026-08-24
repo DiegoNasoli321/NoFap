@@ -82,8 +82,13 @@ function updateTimer() {
 function updateBar(elementId, progress) {
   const bar = document.getElementById(elementId);
   bar.style.width = progress + "%";
-  bar.textContent = progress.toFixed(1) + "%";
+
+  const percentEl = document.getElementById(elementId.replace("Bar", "Percent"));
+  if (percentEl) {
+    percentEl.textContent = progress.toFixed(1) + "%";
+  }
 }
+
 
 function darkenColor(color, amount) {
   let c = color.substring(1);

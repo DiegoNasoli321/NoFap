@@ -44,25 +44,28 @@ label {
 
 
 .progress-bar {
+  position: relative;
   flex: 1;
   height: 30px;
   background: #1e293b;
   border-radius: 12px;
   overflow: hidden;
-  position: relative;
-  width: 100%;
 }
-
 
 .progress-fill {
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #fff;
-  min-width: 12%;
+  border-radius: 12px;
 }
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f5f9;
+  font-weight: bold;
+}
+
 
 /* Diferenciação das cores */
 #dayBar { background: linear-gradient(90deg, #22c55e, #16a34a); }
@@ -169,15 +172,21 @@ button {
 }
 
 /* Ajuste para celulares com largura até 400px (como o SM-A065M) */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .container {
     width: 100%;       /* ocupa toda a largura */
     padding: 5px;
+
+     button {
+    width: 100%; /* ocupa toda a largura em celulares */
+    margin: 5px 0;
+  }
   }
 
   button {
-    width: 100%;       /* botões ocupam toda a largura */
-    font-size: 1em;
+     font-size: 1em;
+  padding: 10px 20px;
+  width: auto;
   }
 
   #timer, #relapses {
